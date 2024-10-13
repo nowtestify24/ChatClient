@@ -1,5 +1,4 @@
-//Ross Kane
-//Project3
+
 #include <iostream>
 #include <cstring>
 #include <fstream>
