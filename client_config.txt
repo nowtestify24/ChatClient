@@ -1,2 +1,2 @@
-servhost: linprog
+servhost: serverName
 servport: 25150
