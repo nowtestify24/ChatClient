@@ -22,6 +22,7 @@ This Client-Server Chatroom program is designed to facilitate real-time communic
 - **Select Function**: Manages multiple file descriptors for client connections
 
 ## chatClient.cpp
+
 ### P-thread explanation:
 - P-threads are used in this project to read and write input to our server buffer.
 - By using these threads, we are able to handle multiple clients at once on the same server application.
@@ -36,6 +37,7 @@ This Client-Server Chatroom program is designed to facilitate real-time communic
 - The client reads our codes from the server to print messages.
 
 ## chatServer.cpp
+
 ### Select explanation:
 - Vectors are used to store connection info, used by `select()`. We can theoretically have many connections, but we tested with 4, with the potential of up to 10.
 - The server application uses the `select()` function to handle which file descriptors contain our client.
@@ -48,6 +50,7 @@ This Client-Server Chatroom program is designed to facilitate real-time communic
 - The server disconnects itself and the client when `ctrl-c` is entered while it is running.
 
 ## Our Own Chat Protocol Codes
+
 ### Chat Messages
 - `800` - Message sent successfully
 - `801` - Message failed to send
